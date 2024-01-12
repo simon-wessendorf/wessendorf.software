@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="surface" transform="matrix(1,0,0,1,0,-1)">
+        <g id="center" transform="matrix(3.01416,0,0,3.17999,-16.2262,-19.3142)">
+            <rect x="6.379" y="7.332" width="8.626" height="8.176" style="fill:rgb(255,138,0);"/>
+        </g>
+        <g id="left" transform="matrix(1,0,0,1,0,1)">
+            <path d="M3,28L2,28L2,4L3,4L3,3L8,3L8,7L7,7L7,23.013L8,23.013L8,25L7,25L7,26L6,26L6,27L5,27L5,28L4,28L4,29L3,29L3,28Z" style="fill:rgb(254,156,40);"/>
+        </g>
+        <g id="bottom" transform="matrix(1,0,0,1,0,1)">
+            <path d="M4,29L3,29L3,28L4,28L4,27L5,27L5,26L6,26L6,25L7,25L7,24L9,24L9,25L26,25L26,24L30,24L30,29L28,29L28,30L4,30L4,29Z" style="fill:rgb(244,132,0);"/>
+        </g>
+        <g id="right" transform="matrix(1,0,0,1,0,1)">
+            <path d="M27,24L27,7L26,7L26,3L30,3L30,29L29,29L29,27L28,27L28,26L27,26L27,25L26,25L26,24L27,24Z" style="fill:rgb(229,124,0);"/>
+        </g>
+        <g id="top" transform="matrix(1,0,0,1,0,1)">
+            <path d="M27,6L25,6L25,5L9,5L9,6L7,6L7,5L6,5L6,4L3,4L3,2L29,2L29,4L28,4L28,5L27,5L27,6Z" style="fill:rgb(255,147,20);"/>
+        </g>
+        <g id="bottom-left" transform="matrix(1,0,0,1,0,1)">
+            <path d="M4,28L4,29L3,29L3,28L4,28ZM6,26L6,25L7,25L7,26L6,26ZM4,28L4,27L5,27L5,28L4,28ZM7,25L7,24L8,24L8,25L7,25ZM5,27L5,26L6,26L6,27L5,27Z" style="fill:rgb(254,150,28);"/>
+        </g>
+        <g id="bottom-right" transform="matrix(1,0,0,1,0,1)">
+            <path d="M27,25L28,25L28,26L27,26L27,25ZM27,25L26,25L26,24L27,24L27,25ZM28,26L29,26L29,27L28,27L28,26ZM30,28L30,29L29,29L29,28L30,28Z" style="fill:rgb(236,128,1);"/>
+        </g>
+        <g id="top-right" transform="matrix(1,0,0,1,0,1)">
+            <path d="M28,4L28,3L29,3L29,4L28,4ZM27,5L27,4L28,4L28,5L27,5ZM27,5L27,6L26,6L26,5L27,5Z" style="fill:rgb(247,134,0);"/>
+        </g>
+        <g id="top-left" transform="matrix(1,0,0,1,0,1)">
+            <path d="M7,5L6,5L6,4L7,4L7,5ZM7,5L8,5L8,6L7,6L7,5ZM5,3L5,4L3,4L3,3L5,3Z" style="fill:rgb(255,150,30);"/>
+        </g>
+    </g>
+    <g id="S">
+        <path id="ground" d="M16,22L13,22L13,21L12,21L12,20L13,20L13,19L15,19L15,20L19,20L19,17L18,17L18,16L15,16L15,15L14,15L14,14L13,14L13,10L14,10L14,9L15,9L15,8L22,8L22,9L21,9L21,10L17,10L17,11L15,11L15,13L17,13L17,14L19,14L19,15L21,15L21,21L20,21L20,22L19,22L19,23L16,23L16,22Z" style="fill:rgb(136,74,0);"/>
+        <path id="sheen" d="M19,22L19,23L16,23L16,22L19,22ZM19,22L19,21L20,21L20,22L19,22ZM20,21L20,20L21,20L21,21L20,21ZM19,16L19,17L18,17L18,16L19,16ZM17,10L17,11L15,11L15,10L17,10Z" style="fill:rgb(168,91,0);"/>
+        <path id="shadow" d="M13,20L13,21L12,21L12,20L13,20ZM13,20L13,19L15,19L15,20L13,20ZM15,20L18,20L18,21L15,21L15,20ZM21,15L21,16L20,16L20,15L21,15ZM17,13L17,14L15,14L15,13L17,13ZM22,8L22,9L19,9L19,8L22,8ZM16,8L16,9L15,9L15,8L16,8Z" style="fill:rgb(116,62,0);"/>
+    </g>
+</svg>

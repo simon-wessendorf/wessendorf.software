@@ -1,0 +1,32 @@
+:root {
+    --primary: rgb(255,138,0);
+    --primary-contrast: #000;
+    --behind-fill: #112;
+    --card-background: #333;
+    --card-foreground: #ddd;
+    --screen-background: #000;
+    --widget-background: #555;
+    --widget-foreground: #fff;
+    --popover-background: #222;
+
+    --transition-time: 150ms;
+
+    --gap: 1rem;
+    --double-gap: calc(var(--gap) * 2);
+    --triple-gap: calc(var(--gap) * 3);
+    --half-gap: calc(var(--gap) / 2);
+    --quarter-gap: calc(var(--gap) / 4);
+}
+
+$breakpoints: (
+    (2 xs 400px),
+    (3 sm 600px)
+);
+
+@import "defaults";
+@import "utils";
+@import "components/card";
+@import "components/chip";
+@import "components/shell";
+
+@import "fontAwesome";

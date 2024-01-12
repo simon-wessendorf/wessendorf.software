@@ -1,0 +1,25 @@
+.card {
+    border-radius: var(--gap);
+    background-color: var(--card-background);
+    color: var(--card-foreground);
+
+    > .header {
+        padding: var(--double-gap) var(--double-gap) var(--half-gap) var(--double-gap);
+    
+        > .title {
+            margin: 0;
+            padding: 0;
+            font-weight: 100;
+        }
+        
+        > .subtitle {
+            color: var(--primary);
+            margin-top: var(--half-gap);
+            display: inline-block;
+        }
+    }
+
+    > .body {
+        padding: var(--gap) var(--double-gap) var(--double-gap) var(--double-gap);
+    }
+}

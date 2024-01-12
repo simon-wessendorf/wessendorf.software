@@ -2,12 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Simon Wessendorf</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="centered-content">
+    <div class="card">
+        <header class="header">
+            <h1 class="title">Simon Wessendorf</h1>
+        </header>
+        <div class="body">
+            <main>
+                <h2>Kontakt</h2>
+                <ul class="vertical xs-grid-2 sm-horizontal no-list">
+                    <li class="popover-container">
+                        <button type="button" class="chip" tabindex="1">
+                            <i class="fa envelope-solid"></i>
+                            <span>Mail</span>
+                        </button>
+                        <div class="popover no-wrap">
+                            <a href="#" data-var="mail" tabindex="2"></a>
+                        </div>
+                    </li>
+                    <li class="popover-container">
+                        <button type="button" class="chip" tabindex="3">
+                            <i class="fa house-solid"></i>
+                            <span>Anschrift</span>
+                        </button>
+                        <div class="popover no-wrap">
+                            Cheruskerring 50<br />
+                            48147 Münster<br />
+                            Deutschland
+                        </div>
+                    </li>
+                    <li class="popover-container">
+                        <button type="button" class="chip" tabindex="4">
+                            <i class="fa phone-solid"></i>
+                            <span>Telefon</span>
+                        </button>
+                        <div class="popover no-wrap">
+                            <a href="#" data-var="mobile" tabindex="5"></a>
+                        </div>
+                    </li>
+                </ul>
+                <h2>Soziale Netzwerke</h2>
+                <ul class="vertical xs-grid-2 sm-horizontal no-list">
+                    <li>
+                        <a href="https://www.instagram.com/simunji_de" class="chip" tabindex="6">
+                            <i class="fa instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://social.vivaldi.net/@Simunji" class="chip" tabindex="7">
+                            <i class="fa mastodon"></i>
+                            <span>Mastodon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/simon-wessendorf" class="chip" tabindex="8">
+                            <i class="fa github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@simunji-de" class="chip" tabindex="9">
+                            <i class="fa youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </main>
+            <div class="shell gap-top">
+                <span class="history">
+                    Nenne eine Technologie:
+                </span>
+                <ul class="typing">
+                    <li>Rust</li>
+                    <li>Zig</li>
+                    <li>C#</li>
+                    <li>TypeScript</li>
+                    <li>Ionic</li>
+                    <li>SCSS</li>
+                    <li>Bootstrap</li>
+                    <li>PHP</li>
+                    <li>Slim</li>
+                    <li>Symfony</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

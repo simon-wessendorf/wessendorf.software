@@ -1,0 +1,49 @@
+.typing {
+    display: inline-flex;
+    vertical-align: top;
+    white-space: nowrap;
+
+    overflow: visible;
+
+    > li {
+        display: none;
+
+        &.active {
+            position: relative;
+
+            display: block;
+            margin: 0;
+            
+            overflow: hidden;
+            white-space: nowrap;
+
+            animation-name: typing;
+            animation-duration: 3s;
+        }
+    }
+
+    &, li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    &::after {
+        content: "_";
+        animation-name: flash;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes flash {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    70% { opacity: 1; }
+    80% { opacity: 1; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: var(--text-width); }
+}

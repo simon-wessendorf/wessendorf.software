@@ -1,0 +1,37 @@
+@mixin fa-icon($name) {
+    &.#{$name} {
+        -webkit-mask-image: url("/img/fa/#{$name}.svg");
+        mask-image: url("/img/fa/#{$name}.svg");
+    }
+}
+
+
+.fa {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentcolor;
+    vertical-align: middle;
+    
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    @include fa-icon(address-book-solid);
+    @include fa-icon(envelope-solid);
+    @include fa-icon(github);
+    @include fa-icon(house-solid);
+    @include fa-icon(instagram);
+    @include fa-icon(mastodon);
+    @include fa-icon(phone-solid);
+    @include fa-icon(section-solid);
+    @include fa-icon(shield-halved-solid);
+    @include fa-icon(youtube);
+
+    + span {
+        vertical-align: middle;
+    }
+}

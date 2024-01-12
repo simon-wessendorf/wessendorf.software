@@ -1,0 +1,32 @@
+.popover-container {
+    position: relative;
+
+    > button {
+        position: relative;
+    }
+
+    > .popover {
+        position: absolute;
+        display: none;
+        top: calc(-1 * var(--gap));
+        left: calc(-1 * var(--gap));
+    }
+
+    &:hover, &:focus-within {
+        > .popover {
+            display: block;
+            z-index: 10;
+        }
+        > button { z-index: 11; }
+    }
+}
+
+.popover {
+    border-radius: calc(0.5em + var(--half-gap));
+    overflow: hidden;
+    min-width: calc(100% + var(--double-gap));
+    padding: calc(1.5em + var(--triple-gap)) var(--gap) var(--gap) var(--gap);
+
+    background-color: var(--popover-background);
+    color: var(--widget-foreground);
+}

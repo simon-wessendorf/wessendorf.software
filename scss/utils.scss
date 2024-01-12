@@ -1,0 +1,75 @@
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.split {
+    display: grid;
+    gap: var(--double-gap);
+
+}
+
+
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.no-part {
+    display: none;
+}
+
+.gap-top {
+    margin-top: var(--gap);
+}
+
+ul.no-list {
+    padding: 0;
+
+    > li {
+        list-style: none;
+    }
+}
+
+@function repeat($value, $count) {
+    $result: "";
+    @for $i from 1 through $count {
+        $result: "#{$result}#{$value}";
+    }
+    @return $result;
+}
+
+@mixin break($className) {
+    .#{$className} {
+        @content;
+    }
+
+    @each $specificity, $prefix, $size in $breakpoints {
+        @media (min-width: $size) {
+            // Repeating is necessary for the correct precedence
+            #{repeat(".#{$prefix}-#{$className}", $specificity)} {
+                @content;
+            }
+        }
+    }
+}
+
+@include break('grid-2') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--half-gap);
+}
+
+@include break('horizontal') {
+    display: flex;
+    flex-direction: row;
+    gap: var(--half-gap);
+}
+
+@include break('vertical') {
+    display: flex;
+    flex-direction: column;
+    gap: var(--half-gap);
+}

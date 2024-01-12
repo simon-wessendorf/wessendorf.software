@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Ysabeau Infant";
+    src: url(/fonts/YsabeauInfant-Regular.woff2);
+}
+
+@font-face {
+    font-family: "VT323";
+    src: url(/fonts/VT323-Regular.woff2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--behind-fill);
+    font-family: "Ysabeau Infant", Roboto, "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: var(--half-gap);
+}
+
+a, button {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: [start] auto [end] 1fr;
+    gap: var(--gap);
+    margin: 0;
+
+    > dt {
+        grid-column: start;
+    }
+    > dd {
+        grid-column: end;
+        margin: 0;
+     }
+}
+
+a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: color var(--transition-time) ease-in-out;
+    &:hover, &:active, &:focus {
+        color: color-mix(in srgb, var(--primary), 30% #fff);
+    }
+}
+
+h2 {
+    margin: 0 0 var(--gap) 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+}

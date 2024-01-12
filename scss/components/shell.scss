@@ -1,0 +1,18 @@
+.shell {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap);
+
+    border: var(--quarter-gap) solid var(--primary);
+    border-radius: var(--half-gap);
+    background-color: var(--screen-background);
+    color: var(--primary);
+    font-family: "VT323", "Roboto Mono", "Consolas", monospace;
+    font-size: 1.5rem;
+
+    > .input {
+        &::before {
+            content: ">";
+        }
+    }
+}
