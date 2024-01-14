@@ -21,10 +21,12 @@
     mask-repeat: no-repeat;
 
     @include fa-icon(address-book-solid);
+    @include fa-icon(arrow-up-solid);
     @include fa-icon(envelope-solid);
     @include fa-icon(github);
     @include fa-icon(house-solid);
     @include fa-icon(instagram);
+    @include fa-icon(language-solid);
     @include fa-icon(mastodon);
     @include fa-icon(phone-solid);
     @include fa-icon(section-solid);

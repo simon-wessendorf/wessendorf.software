@@ -1,0 +1,41 @@
+@use 'sass:list';
+@use "sass:map";
+
+@function number($list, $start) {
+    $result: ();
+    @for $i from 1 through length($list) {
+        $result: append($result, join($start + $i, list.nth($list, $i)));
+    }
+    @return $result;
+}
+
+@function repeat($value, $count) {
+    $result: "";
+    @for $i from 1 through $count {
+        $result: "#{$result}#{$value}";
+    }
+    @return $result;
+}
+
+
+$numberedBreakpoints: number($breakpoints, 2);
+@mixin break($className) {
+    .#{$className} {
+        @content;
+    }
+
+    @each $specificity, $prefix, $size in $numberedBreakpoints {
+        @media (min-width: $size) {
+            // Repeating is necessary for the correct precedence
+            #{repeat(".#{$prefix}-#{$className}", $specificity)} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin breakAt($breakpoint) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

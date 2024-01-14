@@ -1,18 +1,3 @@
-.centered-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.split {
-    display: grid;
-    gap: var(--double-gap);
-
-}
-
-
-
 .no-wrap {
     white-space: nowrap;
 }
@@ -21,9 +6,44 @@
     display: none;
 }
 
-.gap-top {
-    margin-top: var(--gap);
+.text > *, .text-list > li > * {
+    margin: var(--gap) 0 0 0;
 }
+
+.text-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.double-gap-top {
+    margin-top: var(--double-gap);
+}
+
+.d-none {
+    display: none !important;
+}
+
+// Text
+
+.lang {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.75em;
+
+    + span {
+        vertical-align: middle;
+    }
+}
+
+.vt323 {
+    font-family: 'VT323';
+}
+
+
+// Lists
 
 ul.no-list {
     padding: 0;
@@ -33,28 +53,52 @@ ul.no-list {
     }
 }
 
-@function repeat($value, $count) {
-    $result: "";
-    @for $i from 1 through $count {
-        $result: "#{$result}#{$value}";
+ol.h2-list, ol.h3-list {
+    padding: 0;
+
+    > li {
+        list-style-position: inside;
+        margin: 0;
     }
-    @return $result;
 }
 
-@mixin break($className) {
-    .#{$className} {
-        @content;
+ol.h2-list > li {
+    padding-top: var(--gap);
+
+    &::marker {
+        @extend h2;
     }
 
-    @each $specificity, $prefix, $size in $breakpoints {
-        @media (min-width: $size) {
-            // Repeating is necessary for the correct precedence
-            #{repeat(".#{$prefix}-#{$className}", $specificity)} {
-                @content;
-            }
-        }
+    > h2 {
+        display: inline;
     }
 }
+
+ol.h3-list > li {
+    &::marker {
+        @extend h3;
+    }
+
+    > h3 {
+        display: inline;
+    }
+}
+
+.alpha-list {
+    list-style: lower-alpha;
+}
+
+dl.alpha-list {
+	counter-reset: alpha-dl;
+
+    > dt::before {
+        counter-increment: alpha-dl;
+        content: counter(alpha-dl, lower-alpha) ". ";
+    }
+}
+
+
+// Responsive
 
 @include break('grid-2') {
     display: grid;

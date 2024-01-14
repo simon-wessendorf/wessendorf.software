@@ -1,10 +1,11 @@
 .card {
+    position: relative;
     border-radius: var(--gap);
     background-color: var(--card-background);
     color: var(--card-foreground);
 
     > .header {
-        padding: var(--double-gap) var(--double-gap) var(--half-gap) var(--double-gap);
+        padding: var(--double-gap) var(--double-gap) 0 var(--double-gap);
     
         > .title {
             margin: 0;
@@ -19,7 +20,11 @@
         }
     }
 
-    > .body {
+    > .header + .body {
         padding: var(--gap) var(--double-gap) var(--double-gap) var(--double-gap);
+    }
+
+    > .body {
+        padding: var(--double-gap);
     }
 }

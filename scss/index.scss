@@ -2,6 +2,8 @@
     --primary: rgb(255,138,0);
     --primary-contrast: #000;
     --behind-fill: #112;
+    --behind-shadow-tint: #08080f;
+    --fab-shadow-tint: #222;
     --card-background: #333;
     --card-foreground: #ddd;
     --screen-background: #000;
@@ -19,10 +21,11 @@
 }
 
 $breakpoints: (
-    (2 xs 400px),
-    (3 sm 600px)
+    xs: 400px,
+    sm: 600px
 );
 
+@import "mixins";
 @import "defaults";
 @import "utils";
 @import "components/card";

@@ -8,44 +8,49 @@
     src: url(/fonts/VT323-Regular.woff2);
 }
 
+// Document
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html {
     margin: 0;
+    
+    background-color: var(--behind-fill);
+    font-family: "Ysabeau Infant", Roboto, "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
 
     height: 100%;
     width: 100%;
 }
 
 body {
-    background-color: var(--behind-fill);
-    font-family: "Ysabeau Infant", Roboto, "Open Sans", sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: var(--half-gap);
+    margin: 0 auto;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: 1fr [content]auto 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    row-gap: var(--gap);
+    max-width: 1000px;
+    
+    > * {
+        max-width: 100%;
+        grid-column: content;
+        box-shadow:
+            2px 2px 2px 0px var(--behind-shadow-tint),
+            2px 2px 5px 4px var(--behind-shadow-tint);
+    }
 }
+
+// Controls
 
 a, button {
     font-family: inherit;
     font-size: 1rem;
     line-height: 1.5;
-}
-
-dl {
-    display: grid;
-    grid-template-columns: [start] auto [end] 1fr;
-    gap: var(--gap);
-    margin: 0;
-
-    > dt {
-        grid-column: start;
-    }
-    > dd {
-        grid-column: end;
-        margin: 0;
-     }
 }
 
 a {
@@ -59,8 +64,52 @@ a {
     }
 }
 
+
+// Headings
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
 h2 {
     margin: 0 0 var(--gap) 0;
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+// Lists
+
+dl {
+    display: grid;
+    gap: var(--half-gap);
+    margin: 0;
+
+    > dt {
+        font-weight: bold;
+    }
+
+    > dd {
+        margin: 0 0 var(--half-gap) 0;
+    }
+
+    @include breakAt(sm) {
+        grid-template-columns: [start] auto [end] 1fr;
+        gap: var(--gap);
+
+        > dt { grid-column: start; }
+        > dd { grid-column: end; }
+    }
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    padding-left: 1.5rem;
 }
