@@ -115,6 +115,20 @@ h2 {
 }
 
 
+// Controls
+
+button.link {
+    display: inline;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    
+    @extend a;
+}
+
+
 // Responsive
 
 @include break('grid-2') {
