@@ -1,0 +1,23 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://wessendorf.software/</loc>
+    </url>
+    <url>
+        <loc>https://wessendorf.software/contact/</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://wessendorf.software/contact/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://wessendorf.software/contact/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://wessendorf.software/kontakt/" />
+    </url>
+    <url>
+        <loc>https://wessendorf.software/site-notice/</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://wessendorf.software/site-notice/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://wessendorf.software/site-notice/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://wessendorf.software/impressum/" />
+    </url>
+    <url>
+        <loc>https://wessendorf.software/privacy-policy/</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://wessendorf.software/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://wessendorf.software/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://wessendorf.software/datenschutzerklärung/" />
+    </url>
+</urlset>

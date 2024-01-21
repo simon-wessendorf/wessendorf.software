@@ -4,44 +4,64 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Language | Simon Wessendorf</title>
+    <title>Sitemap | Simon Wessendorf</title>
   </head>
   <body class="centered-content">
     <div class="card">
         <header class="header">
-            <h1 class="title">Language</h1>
+            <h1 class="title">Sitemap</h1>
         </header>
         <main class="body">
-            <ul class="vertical xs-grid-2 sm-horizontal no-list">
-                <li>
-                    <a href="/de/kontakt/" class="chip" tabindex="1" lang="de">
-                        <em class="lang">DE</em>
-                        <span>Deutsch</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/en/contact" class="chip" tabindex="2" lang="en">
-                        <em class="lang">EN</em>
-                        <span>English</span>
-                    </a>
-                </li>
-            </ul>
+            <section lang="en">
+                <h2>English</h2>
+
+                <ul class="vertical xs-grid-2 sm-horizontal no-list">
+                    <li>
+                        <a href="/en/contact" class="chip" tabindex="4" hreflang="en">
+                            <i class="fa house-solid"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/en/site-notice/" class="chip" tabindex="5" hreflang="en">
+                            <i class="fa section-solid"></i>
+                            <span>Site notice</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/en/privacy-policy/" class="chip" tabindex="6" hreflang="en">
+                            <i class="fa shield-halved-solid"></i>
+                            <span>Privacy policy</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section lang="de">
+                <h2>Deutsch</h2>
+
+                <ul class="vertical xs-grid-2 sm-horizontal no-list">
+                    <li>
+                        <a href="/de/kontakt/" class="chip" tabindex="1" hreflang="de">
+                            <i class="fa house-solid"></i>
+                            <span>Kontakt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/de/impressum/" class="chip" tabindex="3" hreflang="de">
+                            <i class="fa section-solid"></i>
+                            <span>Impressum</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/de/datenschutzerklärung/" class="chip" tabindex="2" hreflang="de">
+                            <i class="fa shield-halved-solid"></i>
+                            <span>Datenschutzerklärung</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </main>
-    </div>
-
-    <div class="card">
-        <footer class="body">
-            <h2>Right</h2>
-
-            <ul class="vertical xs-grid-2 sm-horizontal no-list">
-                <li>
-                    <a class="chip" href="/privacy-policy/" tabindex="3">
-                        <i class="fa shield-halved-solid"></i>
-                        <span>Privacy Policy</span>
-                    </a>
-                </li>
-            </u>
-        </footer>
     </div>
 
     <button title="To the top" type="button" class="chip icon-only fix-bottom-right d-none scroll-up" href="/">

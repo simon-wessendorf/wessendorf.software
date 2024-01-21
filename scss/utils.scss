@@ -42,7 +42,6 @@
     font-family: 'VT323';
 }
 
-
 // Lists
 
 ul.no-list {
@@ -93,8 +92,26 @@ dl.alpha-list {
 
     > dt::before {
         counter-increment: alpha-dl;
-        content: counter(alpha-dl, lower-alpha) ". ";
+        content: counter(alpha-dl, lower-alpha) '. ';
     }
+}
+
+.number-h2 {
+    counter-reset: h2;
+
+    h2::before {
+        counter-increment: h2;
+        content: counter(h2, decimal) '. ';
+    }
+}
+
+h2 {
+    counter-reset: h3;
+}
+
+.alpha-h3 h3::before {
+    counter-increment: h3;
+    content: counter(h3, lower-alpha) ') ';
 }
 
 
