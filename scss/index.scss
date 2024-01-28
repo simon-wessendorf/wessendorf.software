@@ -1,16 +1,21 @@
 :root {
     --primary: rgb(255,138,0);
     --primary-contrast: #000;
+    --danger: #b50000;
+    --danger-contrast: white;
+
     --behind-fill: #112;
     --behind-shadow-tint: #08080f;
-    --fab-shadow-tint: #222;
+    
     --card-background: #333;
     --card-foreground: #ddd;
     --screen-background: #000;
     --widget-background: #555;
     --widget-foreground: #fff;
+    --fab-shadow-tint: #222;
+    
     --popover-background: #222;
-    --popover-shadow-tint: #444;
+    --popover-shadow-tint: #151515;
 
     --transition-time: 150ms;
 

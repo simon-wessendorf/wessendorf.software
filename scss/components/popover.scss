@@ -12,8 +12,8 @@
         left: calc(-1 * var(--gap));
 
         box-shadow:
-            2px 2px  4px 0px var(--behind-shadow-tint),
-            2px 2px 10px 0px var(--behind-shadow-tint);
+            2px 2px  4px 0px var(--popover-shadow-tint),
+            2px 2px 10px 0px var(--popover-shadow-tint);
     }
 
     &:hover, &:focus-within {

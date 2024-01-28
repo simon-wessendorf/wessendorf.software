@@ -27,4 +27,10 @@
     > .body {
         padding: var(--double-gap);
     }
+
+    &.danger {
+        background-color: var(--danger);
+        color: var(--danger-contrast);
+        --behind-shadow-tint: color-mix(in srgb, var(--danger), #000 70%);
+    }
 }
