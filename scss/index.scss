@@ -10,6 +10,7 @@
     --widget-background: #555;
     --widget-foreground: #fff;
     --popover-background: #222;
+    --popover-shadow-tint: #444;
 
     --transition-time: 150ms;
 
@@ -30,6 +31,7 @@ $breakpoints: (
 @import "utils";
 @import "components/card";
 @import "components/chip";
+@import "components/popover";
 @import "components/shell";
 
 @import "fontAwesome";
